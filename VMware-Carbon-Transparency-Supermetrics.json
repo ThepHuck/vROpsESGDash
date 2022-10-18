@@ -1,0 +1,56 @@
+{
+   "3cff8d09-f836-4f61-8b28-da9dd0991ab6": {
+      "resourceKinds": [{
+         "resourceKindKey": "VirtualMachine",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1665519771289,
+      "name": "VM Carbon Emission",
+      "formula": "sum(${this, metric=power|energy_summation_sum})/1000 * 0.709 / 1000",
+      "description": "VM carbon emission used in the VMware Carbon Transparency dashboard.",
+      "unitId": "kg",
+      "modifiedBy": "076b0723-82fa-30f4-a4d0-0b687fbb1b86"
+   },
+   "a7980619-4a2f-4cc4-9a9a-f76248ff13a8": {
+      "resourceKinds": [{
+         "resourceKindKey": "ClusterComputeResource",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1665519686366,
+      "name": "Oversized Clusters",
+      "formula": "(${this, metric=OnlineCapacityAnalytics|capacityRemainingPercentage}>50)&&(${this, metric=summary|total_number_hosts}>4)",
+      "description": "Calculates oversized clusters, used in the VMware Carbon Transparency dashboard.",
+      "unitId": "none",
+      "modifiedBy": "076b0723-82fa-30f4-a4d0-0b687fbb1b86"
+   },
+   "97da0ad0-627b-4752-885f-85234072a3e8": {
+      "resourceKinds": [
+         {
+            "resourceKindKey": "VMwareAdapter Instance",
+            "adapterKindKey": "VMWARE"
+         },
+         {
+            "resourceKindKey": "Datacenter",
+            "adapterKindKey": "VMWARE"
+         }
+      ],
+      "modificationTime": 1665519653256,
+      "name": "Carbon emission",
+      "formula": "sum(${adaptertype=VMWARE, objecttype=HostSystem, metric=power|energy_summation_sum, depth=5})/1000 * 0.709",
+      "description": "Datacenter and vCenter Carbon emission used in the VMware Carbon Transparency dashboard.",
+      "unitId": "kg",
+      "modifiedBy": "076b0723-82fa-30f4-a4d0-0b687fbb1b86"
+   },
+   "ec01d7a8-78d8-43df-9190-2f35c5ff5f75": {
+      "resourceKinds": [{
+         "resourceKindKey": "HostSystem",
+         "adapterKindKey": "VMWARE"
+      }],
+      "modificationTime": 1665519667362,
+      "name": "Host Carbon Emission",
+      "formula": "sum(${this, metric=power|energy_summation_sum})/1000 * 0.709",
+      "description": "Host carbon emission used in the VMware Carbon Transparency dashboard.",
+      "unitId": "kg",
+      "modifiedBy": "076b0723-82fa-30f4-a4d0-0b687fbb1b86"
+   }
+}
