@@ -11,7 +11,8 @@ Import the VMware-Carbon-Transparency-Supermetrics.json:
 1. Left side navigation pane -> Configure -> Super Metrics
 ![Super Metrics](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/Super-Metrics.jpg?raw=true)
    - Click the three dot menu and select Import
-![Super Metrics Menu](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/import-Super-Metrics-menu.jpg?raw=true)
+     
+     ![Super Metrics Menu](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/import-Super-Metrics-menu.jpg?raw=true)
      - Browse to the json file and select "Overwrite existing Super Metric"
 ![Super Metrics Menu](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/import-Super-Metrics.jpg?raw=true)
      - You may have to enable the Super Metric in a policy to collect data.
