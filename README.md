@@ -1,4 +1,4 @@
-# VMware Carbon Transparency ESG Dashboard
+# VMware Carbon Emissions Explorer ESG Dashboard
 
 VMware's Office of the CTO (OCTO) created this vROps dashboard to show the carbon footprint of your environment.  This dashboard was demo'd in the VMware OCTO Sustainability booth at VMware Explore 2022.
 
@@ -7,7 +7,7 @@ VMware's Office of the CTO (OCTO) created this vROps dashboard to show the carbo
 ## Installation
 
 ### Super Metrics
-Import the VMware-Carbon-Transparency-Supermetrics.json:
+Import the VMware-Carbon-Emissions-Explorer-Supermetrics.json:
 1. Left side navigation pane -> Configure -> Super Metrics
 ![Super Metrics](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/Super-Metrics.jpg?raw=true)
    - Click the three dot menu and select Import
@@ -32,7 +32,7 @@ Import the VMware-Carbon-Transparency-Supermetrics.json:
      - Once enabled, you'll have to wait for a polling interval for the dashboard to display data.
 
 ### Views
-Import the VMware-Carbon-Transparency-Views.zip:
+Import the VMware-Carbon-Emissions-Explorer-Views.zip:
 1. Left side navigation pane -> Visualize -> Views
    - Click Manage under the Views pane, then the three dot menu and select Import
 ![Manage Views](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/manage-views.jpg?raw=true)
@@ -43,7 +43,7 @@ Import the VMware-Carbon-Transparency-Views.zip:
 ![Verify Views](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/carbon-views.jpg?raw=true)
 
 ### Dashboard
-Import the VMware-Carbon-Transparency-Dashboard.zip:
+Import the VMware-Carbon-Emissions-Explorer-Dashboard.zip:
 1. Left side navigation pane -> Visualize -> Dashboards
    - Click Manage under the Dashboards pane, then the three dot menu and select Import
 ![Manage Dashboard](https://github.com/ThepHuck/vROpsESGDash/blob/main/installation-screenshots/import-dashboard.jpg?raw=true)
